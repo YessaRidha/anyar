@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+  color: rgb(255, 255, 255);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000000;
+  z-index: 100;
+}
+
+.navbar-component {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  position: absolute;
+  top: 8px;
+  left: 35px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  margin-left: 100px;
+}
+
+.nav-links li {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding: 0px 18px;
+  margin: 0 10px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.button {
+  margin-right: 40px;
+}
+
+.hero {
+  text-align: center;
+  margin-top: 15%;
+}
+
+.hero-home {
+  text-align: center;
+  margin-top: 0px;
+}
+
+.hero h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
+.hero-home h1 {
+  margin-top: 63px;
+  text-align: center;
+  font-size: 60px;
+}
+
+.mobile-menu-icon {
+  display: none;
+  color: white;
+}
+
+button {
+  border: none;
+  text-decoration: none;
+  font-size: 20px;
+  background: none;
+}
+.navbar-component li:hover,
+.navbar-component li:active {
+  border-bottom: 2px solid #d54bff;
+}
+.nav-item {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.nav-item:hover {
+  background-color: #7f2999;
+  color: #ffffff;
+  border-color: #000000;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 35px;
+    color: rgb(255, 255, 255);
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    top: 10%;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    background-color: #1f1930;
+  }
+
+  ul li {
+    padding: 40px 20px;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+  }
+
+  .mobile-menu-icon {
+    position: absolute;
+    display: block;
+    right: 20px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero-home {
+    margin-top: 100;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .button-desktop {
+    display: none;
+  }
+
+  .button-mobile {
+    display: block;
+  }
+
+  .button-mobile-position {
+    position: absolute;
+    top: 20px;
+    right: 55px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .button-desktop {
+    display: block;
+  }
+
+  .button-mobile {
+    display: none;
+  }
+}
